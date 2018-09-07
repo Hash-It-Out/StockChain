@@ -1,0 +1,6 @@
+node
+npm
+npm install -g truffle
+ganache
+npm install -g solidity
+metamask(chrome extension)
