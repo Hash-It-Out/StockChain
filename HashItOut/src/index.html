@@ -97,7 +97,6 @@ section{
 
 
 <script>
-// '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
 $(window).on("load resize ", function() {
   var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
   $('.tbl-header').css({'padding-right':scrollWidth});
@@ -126,175 +125,46 @@ $('.quantity').on('blur',function(){
 <body>
 
 <section>
-  <!--for demo wrap-->
   <h1>Share Market</h1>
   <div id="loader">
   <p class="text-center">Loading...</p>
   </div>
   <div id="content" style="display: none;">
-  <div class="tbl-header">
-    <table cellpadding="0" cellspacing="0" border="0">
-      <thead>
-        <tr>
-          <th>Code</th>
-          <th>Company</th>
-          <th>Buy Value</th>
-          <th>Sell Value</th>
-        </tr>
-      </thead>
-    </table>
-  </div>
-  <div class="tbl-content">
-    <table cellpadding="0" cellspacing="0" border="0">
-      <tbody>
-        <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td class="value"><p class="value1">56</p>
-            <div class="t1">
-              <a onclick="document.getElementById('id01').style.display='block'" class="glyphicon glyphicon-plus">
-            </a>
-            </div>
-          </td>
-
-
-          <td class="value"><p class="value1">60</p>
-            <div class="t1">
-              <a onclick="document.getElementById('id02').style.display='block'" class="glyphicon glyphicon-minus">
-            </a>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>AAC</td>
-          <td>COMPANY </td>
-          <td>56
-            <div class="t1">
-              <a href="#">
-                <span class="glyphicon glyphicon-plus"></span>
-            </a>
-            </div>
-          </td>
-          <td>60
-            <div class="t1">
-              <a href="#">
-                <span class="glyphicon glyphicon-minus"></span>
-            </a>
-            </div>
-          </td>
-        </tr>
-        <tr>
-         <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>56
-            <div class="t1">
-              <a href="#">
-                <span class="glyphicon glyphicon-plus"></span>
-            </a>
-            </div>
-          </td>
-          <td>60
-            <div class="t1">
-              <a href="#">
-                <span class="glyphicon glyphicon-minus"></span>
-            </a>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>56
-            <div class="t1">
-              <a href="#">
-                <span class="glyphicon glyphicon-plus"></span>
-            </a>
-            </div>
-          </td>
-          <td>60
-            <div class="t1">
-              <a href="#">
-                <span class="glyphicon glyphicon-minus"></span>
-            </a>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>56
-            <div class="t1">
-              <a href="#">
-                <span class="glyphicon glyphicon-plus"></span>
-            </a>
-            </div>
-          </td>
-          <td>60
-            <div class="t1">
-              <a href="#">
-                <span class="glyphicon glyphicon-minus"></span>
-            </a>
-            </div>
-          </td>
-        </tr>
-        
-      </tbody>
-    </table>
-  </div>
-</section>
-
-
-<div id="id01" class="w3-modal">
-    <div class="w3-modal-content">
-      <div class="w3-container">
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <form>
-        <div class="form-group">
-          <label>Quantity</label>
-          <input type="number" class="form-control quantity" id="exampleInputEmail1" aria-describedby="emailHelp">
-          
+          <div id="content" style="display: none;">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Company Name</th>
+                  <th scope="col">Share Code</th>
+                  <th scope="col">Buy Price</th>
+                  <th scope="col">Sell Price</th>
+                </tr>
+              </thead>
+            </table>
+            <hr/>
+<!--             <form onSubmit="App.castVote(); return false;">
+              <div class="form-group">
+                <label for="candidatesSelect">Select Candidate</label>
+                <select class="form-control" id="candidatesSelect">
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Vote</button>
+              <hr />
+            </form>
+ -->            <p id="accountAddress" class="text-center"></p>
+          </div>
         </div>
-        <div class="form-group">
-          <label>Amount</label>
-          <input type="number" class="form-control amount" id="exampleInputPassword1">
-        </div>
-        <button type="submit" class="btn btn-primary">Buy</button>
-      </form>
       </div>
     </div>
-</div>
-</div>
 
-<div id="id02" class="w3-modal">
-    <div class="w3-modal-content">
-      <div class="w3-container">
-        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <form>
-        <div class="form-group">
-          <label>Quantity</label>
-          <input type="number" class="form-control quantity" id="exampleInputEmail1" aria-describedby="emailHelp">
-          
-        </div>
-        <div class="form-group">
-          <label>Amount</label>
-          <input type="number" class="form-control amount" id="exampleInputPassword1">
-        </div>
-        <button type="submit" class="btn btn-primary">Sell</button>
-      </form>
-      </div>
-    </div>
-</div>
-</div>
-  
-  
-  
-  
-  
-  
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
 </html>
