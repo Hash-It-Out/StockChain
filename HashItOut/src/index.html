@@ -92,7 +92,7 @@ section{
   
 
   </style>
-  <title>Ad-Mela</title>
+  <title>Share Market</title>
 </head>
 
 
@@ -130,19 +130,20 @@ $('.quantity').on('blur',function(){
   <p class="text-center">Loading...</p>
   </div>
   <div id="content" style="display: none;">
-          <div id="content" style="display: none;">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Company Name</th>
-                  <th scope="col">Share Code</th>
-                  <th scope="col">Buy Price</th>
-                  <th scope="col">Sell Price</th>
-                </tr>
-              </thead>
-            </table>
-            <hr/>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Company Name</th>
+          <th scope="col">Share Code</th>
+          <th scope="col">Buy Price</th>
+          <th scope="col">Sell Price</th>
+        </tr>
+        <tbody id="shareResults">
+        </tbody>
+      </thead>
+    </table>
+    <hr/>
 <!--             <form onSubmit="App.castVote(); return false;">
               <div class="form-group">
                 <label for="candidatesSelect">Select Candidate</label>
@@ -154,9 +155,7 @@ $('.quantity').on('blur',function(){
             </form>
  -->            <p id="accountAddress" class="text-center"></p>
           </div>
-        </div>
-      </div>
-    </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

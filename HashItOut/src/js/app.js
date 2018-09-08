@@ -73,8 +73,8 @@ App = {
       shareInstance = instance;
       return shareInstance.Count();
     }).then(function(Count) {
-      // var candidatesResults = $("#candidatesResults");
-      // candidatesResults.empty();
+      var shareResults = $("#shareResults");
+      shareResults.empty();
 
       // var candidatesSelect = $('#candidatesSelect');
       // candidatesSelect.empty();
@@ -86,9 +86,10 @@ App = {
           var Share_Code = sh[2];
           var Buy_Amt = sh[3];
           var Sell_Amt = sh[4];
-
+          console.log(id+" "+Share_Name);
           // Render candidate Result
-          var shareTemplate = "<tr><th>" + id + "</th><td>" + Share_Name + "</td><td>" + Share_Code + "</td><td>" + Buy_Amt +`<a onclick="document.getElementById('id01').style.display='block'" class="glyphicon glyphicon-plus">`+ "</td><td>" + Sell_Amt +`<a onclick="document.getElementById('id02').style.display='block'" class="glyphicon glyphicon-minus">`+ "</td></tr>";
+          var shareTemplate = "<tr><th>" + id + "</th><td>" + Share_Name + "</td><td>" + Share_Code + "</td><td>" + Buy_Amt +`<a onclick="document.getElementById('id02').style.display='block'" class="glyphicon glyphicon-minus">`+ "</td><td>" + Sell_Amt +`<a onclick="document.getElementById('id01').style.display='block'" class="glyphicon glyphicon-plus">`+ "</td></tr>"
+          shareResults.append(shareTemplate);
 
           // // Render candidate ballot option
           // var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
