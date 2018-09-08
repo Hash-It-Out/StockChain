@@ -1,0 +1,2612 @@
+{
+  "contractName": "Shares",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "Count",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "Share",
+      "outputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "Share_Name",
+          "type": "string"
+        },
+        {
+          "name": "Share_Code",
+          "type": "string"
+        },
+        {
+          "name": "Buy_Amt",
+          "type": "uint256"
+        },
+        {
+          "name": "Sell_Amt",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061009a6040805190810160405280600b81526020017f414343204c494d495445440000000000000000000000000000000000000000008152506040805190810160405280600381526020017f41434300000000000000000000000000000000000000000000000000000000008152506103e86103d46102c3640100000000026401000000009004565b6101236040805190810160405280600f81526020017f4144414e4920504f574552204c544400000000000000000000000000000000008152506040805190810160405280600a81526020017f4144414e49504f574552000000000000000000000000000000000000000000008152506105dc6106406102c3640100000000026401000000009004565b6101ac6040805190810160405280600d81526020017f42414e4b204f4620494e444941000000000000000000000000000000000000008152506040805190810160405280600981526020017f42414e4b494e44494100000000000000000000000000000000000000000000008152506107d06107bc6102c3640100000000026401000000009004565b6102356040805190810160405280600e81526020017f434f414c20494e444941204c54440000000000000000000000000000000000008152506040805190810160405280600981526020017f434f414c494e444941000000000000000000000000000000000000000000000081525061070861070d6102c3640100000000026401000000009004565b6102be6040805190810160405280600781526020017f495443204c5444000000000000000000000000000000000000000000000000008152506040805190810160405280600381526020017f495443000000000000000000000000000000000000000000000000000000000081525061057d6105796102c3640100000000026401000000009004565b610419565b60016000815480929190600101919050555060a0604051908101604052806001548152602001858152602001848152602001838152602001828152506000806001548152602001908152602001600020600082015181600001556020820151816001019080519060200190610339929190610374565b506040820151816002019080519060200190610356929190610374565b50606082015181600301556080820151816004015590505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103b557805160ff19168380011785556103e3565b828001600101855582156103e3579182015b828111156103e25782518255916020019190600101906103c7565b5b5090506103f091906103f4565b5090565b61041691905b808211156104125760008160009055506001016103fa565b5090565b90565b61033b806104286000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806393a8333e14610051578063ffef8f881461007c575b600080fd5b34801561005d57600080fd5b506100666101a3565b6040518082815260200191505060405180910390f35b34801561008857600080fd5b506100a7600480360381019080803590602001909291905050506101a9565b604051808681526020018060200180602001858152602001848152602001838103835287818151815260200191508051906020019080838360005b838110156100fd5780820151818401526020810190506100e2565b50505050905090810190601f16801561012a5780820380516001836020036101000a031916815260200191505b50838103825286818151815260200191508051906020019080838360005b83811015610163578082015181840152602081019050610148565b50505050905090810190601f1680156101905780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b60015481565b6000602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561025b5780601f106102305761010080835404028352916020019161025b565b820191906000526020600020905b81548152906001019060200180831161023e57829003601f168201915b505050505090806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102f95780601f106102ce576101008083540402835291602001916102f9565b820191906000526020600020905b8154815290600101906020018083116102dc57829003601f168201915b50505050509080600301549080600401549050855600a165627a7a72305820a74597301838b1693006e50482068217f377a1dc77c38e11416c0957ce7fecd20029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806393a8333e14610051578063ffef8f881461007c575b600080fd5b34801561005d57600080fd5b506100666101a3565b6040518082815260200191505060405180910390f35b34801561008857600080fd5b506100a7600480360381019080803590602001909291905050506101a9565b604051808681526020018060200180602001858152602001848152602001838103835287818151815260200191508051906020019080838360005b838110156100fd5780820151818401526020810190506100e2565b50505050905090810190601f16801561012a5780820380516001836020036101000a031916815260200191505b50838103825286818151815260200191508051906020019080838360005b83811015610163578082015181840152602081019050610148565b50505050905090810190601f1680156101905780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b60015481565b6000602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561025b5780601f106102305761010080835404028352916020019161025b565b820191906000526020600020905b81548152906001019060200180831161023e57829003601f168201915b505050505090806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102f95780601f106102ce576101008083540402835291602001916102f9565b820191906000526020600020905b8154815290600101906020018083116102dc57829003601f168201915b50505050509080600301549080600401549050855600a165627a7a72305820a74597301838b1693006e50482068217f377a1dc77c38e11416c0957ce7fecd20029",
+  "sourceMap": "28:741:0:-;;;330:274;8:9:-1;5:2;;;30:1;27;20:12;5:2;330:274:0;356:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;386:4;391:3;356:9;;;:39;;;:::i;:::-;400:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;441:4;446;400:9;;;:51;;;:::i;:::-;456:48;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;494:4;499;456:9;;;:48;;;:::i;:::-;509:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;548:4;553;509:9;;;:49;;;:::i;:::-;563:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;589:4;594;563:9;;;:36;;;:::i;:::-;28:741;;609:153;690:5;;:8;;;;;;;;;;;;;718:39;;;;;;;;;725:5;;718:39;;;;732:5;718:39;;;;739:5;718:39;;;;745:5;718:39;;;;751:5;718:39;;;703:5;:12;709:5;;703:12;;;;;;;;;;;:54;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;609:153;;;;:::o;28:741::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "28:741:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;239:17;;8:9:-1;5:2;;;30:1;27;20:12;5:2;239:17:0;;;;;;;;;;;;;;;;;;;;;;;199:36;;8:9:-1;5:2;;;30:1;27;20:12;5:2;199:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;199:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;199:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;239:17;;;;:::o;199:36::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.24;\r\n\r\ncontract Shares {\r\n\t//Model Shares\r\n\tstruct Shares{\r\n\t\tuint id;\r\n\t \tstring  Share_Name;\r\n\t\tstring  Share_Code;\r\n\t\tuint  Buy_Amt;\r\n\t\tuint  Sell_Amt;\r\n\t}\r\n\t//Store Shares\r\n\tmapping(uint => Shares) public Share;\r\n\tuint public Count;\r\n\t//Buy Shares\r\n\t//Sell Shares\r\n\t//Fetch Shares\r\n\t//Store User Shares\r\n\tconstructor() public {\r\n\t\taddShares(\"ACC LIMITED\",\"ACC\",1000,980);\r\n\t\taddShares(\"ADANI POWER LTD\",\"ADANIPOWER\",1500,1600);\r\n\t\taddShares(\"BANK OF INDIA\",\"BANKINDIA\",2000,1980);\r\n\t\taddShares(\"COAL INDIA LTD\",\"COALINDIA\",1800,1805);\r\n\t\taddShares(\"ITC LTD\",\"ITC\",1405,1401);\r\n\t}\r\n\r\n\tfunction addShares (string _name,string _code,uint _bamt,uint _samt) private{\r\n\t\tCount ++;\r\n\t\tShare[Count] = Shares(Count, _name, _code,_bamt,_samt);\r\n\t}\r\n\r\n\r\n}",
+  "sourcePath": "C:\\Users\\PRIYAM SHAH\\Blockchain\\HashItOut\\contracts\\Shares.sol",
+  "ast": {
+    "absolutePath": "/C/Users/PRIYAM SHAH/Blockchain/HashItOut/contracts/Shares.sol",
+    "exportedSymbols": {
+      "Shares": [
+        85
+      ]
+    },
+    "id": 86,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 85,
+        "linearizedBaseContracts": [
+          85
+        ],
+        "name": "Shares",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Shares.Shares",
+            "id": 12,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 12,
+                "src": "83:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "83:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "name": "Share_Name",
+                "nodeType": "VariableDeclaration",
+                "scope": 12,
+                "src": "96:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "96:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7,
+                "name": "Share_Code",
+                "nodeType": "VariableDeclaration",
+                "scope": 12,
+                "src": "119:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 6,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "119:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 9,
+                "name": "Buy_Amt",
+                "nodeType": "VariableDeclaration",
+                "scope": 12,
+                "src": "142:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 8,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "142:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 11,
+                "name": "Sell_Amt",
+                "nodeType": "VariableDeclaration",
+                "scope": 12,
+                "src": "160:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 10,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "160:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Shares",
+            "nodeType": "StructDefinition",
+            "scope": 85,
+            "src": "65:114:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 16,
+            "name": "Share",
+            "nodeType": "VariableDeclaration",
+            "scope": 85,
+            "src": "199:36:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Shares_$12_storage_$",
+              "typeString": "mapping(uint256 => struct Shares.Shares)"
+            },
+            "typeName": {
+              "id": 15,
+              "keyType": {
+                "id": 13,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "207:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "199:23:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Shares_$12_storage_$",
+                "typeString": "mapping(uint256 => struct Shares.Shares)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 14,
+                "name": "Shares",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 12,
+                "src": "215:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Shares_$12_storage_ptr",
+                  "typeString": "struct Shares.Shares"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 18,
+            "name": "Count",
+            "nodeType": "VariableDeclaration",
+            "scope": 85,
+            "src": "239:17:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 17,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "239:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 56,
+              "nodeType": "Block",
+              "src": "351:253:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "414343204c494d49544544",
+                        "id": 22,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "366:13:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_dcc5c06d5065e10afa5dd231491bafcba3ef4fa7ead4b7a622f7e00d8647a896",
+                          "typeString": "literal_string \"ACC LIMITED\""
+                        },
+                        "value": "ACC LIMITED"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "414343",
+                        "id": 23,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "380:5:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_ba820cc3887163b837a8768e6a5b186b16a86bdf66a4448502c551f31328f85f",
+                          "typeString": "literal_string \"ACC\""
+                        },
+                        "value": "ACC"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31303030",
+                        "id": 24,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "386:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1000_by_1",
+                          "typeString": "int_const 1000"
+                        },
+                        "value": "1000"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "393830",
+                        "id": 25,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "391:3:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_980_by_1",
+                          "typeString": "int_const 980"
+                        },
+                        "value": "980"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_dcc5c06d5065e10afa5dd231491bafcba3ef4fa7ead4b7a622f7e00d8647a896",
+                          "typeString": "literal_string \"ACC LIMITED\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_ba820cc3887163b837a8768e6a5b186b16a86bdf66a4448502c551f31328f85f",
+                          "typeString": "literal_string \"ACC\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1000_by_1",
+                          "typeString": "int_const 1000"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_980_by_1",
+                          "typeString": "int_const 980"
+                        }
+                      ],
+                      "id": 21,
+                      "name": "addShares",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 84,
+                      "src": "356:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,string memory,uint256,uint256)"
+                      }
+                    },
+                    "id": 26,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "356:39:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 27,
+                  "nodeType": "ExpressionStatement",
+                  "src": "356:39:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4144414e4920504f574552204c5444",
+                        "id": 29,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "410:17:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_28774b70fefc57f486e2064a52ce3cd77b3efb11a5dcda6f2a5871e399f64940",
+                          "typeString": "literal_string \"ADANI POWER LTD\""
+                        },
+                        "value": "ADANI POWER LTD"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4144414e49504f574552",
+                        "id": 30,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "428:12:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_3c9ef14a6e80abf0cd59095fafd1e2112c1c53f644e92fcf7e2b1df9d9cfc8fb",
+                          "typeString": "literal_string \"ADANIPOWER\""
+                        },
+                        "value": "ADANIPOWER"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31353030",
+                        "id": 31,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "441:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1500_by_1",
+                          "typeString": "int_const 1500"
+                        },
+                        "value": "1500"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31363030",
+                        "id": 32,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "446:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1600_by_1",
+                          "typeString": "int_const 1600"
+                        },
+                        "value": "1600"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_28774b70fefc57f486e2064a52ce3cd77b3efb11a5dcda6f2a5871e399f64940",
+                          "typeString": "literal_string \"ADANI POWER LTD\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_3c9ef14a6e80abf0cd59095fafd1e2112c1c53f644e92fcf7e2b1df9d9cfc8fb",
+                          "typeString": "literal_string \"ADANIPOWER\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1500_by_1",
+                          "typeString": "int_const 1500"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1600_by_1",
+                          "typeString": "int_const 1600"
+                        }
+                      ],
+                      "id": 28,
+                      "name": "addShares",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 84,
+                      "src": "400:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,string memory,uint256,uint256)"
+                      }
+                    },
+                    "id": 33,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "400:51:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 34,
+                  "nodeType": "ExpressionStatement",
+                  "src": "400:51:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "42414e4b204f4620494e444941",
+                        "id": 36,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "466:15:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_9bef75b92408ffecc14f44f18b99f1314c950ba8c9b385d31f92d340dc934b92",
+                          "typeString": "literal_string \"BANK OF INDIA\""
+                        },
+                        "value": "BANK OF INDIA"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "42414e4b494e444941",
+                        "id": 37,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "482:11:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cd5205421bcc15a5019d2d332594ed6e43e0fba9bcac47505edba4c6081baff1",
+                          "typeString": "literal_string \"BANKINDIA\""
+                        },
+                        "value": "BANKINDIA"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "32303030",
+                        "id": 38,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "494:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2000_by_1",
+                          "typeString": "int_const 2000"
+                        },
+                        "value": "2000"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31393830",
+                        "id": 39,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "499:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1980_by_1",
+                          "typeString": "int_const 1980"
+                        },
+                        "value": "1980"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_9bef75b92408ffecc14f44f18b99f1314c950ba8c9b385d31f92d340dc934b92",
+                          "typeString": "literal_string \"BANK OF INDIA\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_cd5205421bcc15a5019d2d332594ed6e43e0fba9bcac47505edba4c6081baff1",
+                          "typeString": "literal_string \"BANKINDIA\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_2000_by_1",
+                          "typeString": "int_const 2000"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1980_by_1",
+                          "typeString": "int_const 1980"
+                        }
+                      ],
+                      "id": 35,
+                      "name": "addShares",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 84,
+                      "src": "456:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,string memory,uint256,uint256)"
+                      }
+                    },
+                    "id": 40,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "456:48:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 41,
+                  "nodeType": "ExpressionStatement",
+                  "src": "456:48:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "434f414c20494e444941204c5444",
+                        "id": 43,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "519:16:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_14652a0dc59d8e4fddda9c9d1733359a7c09deb246234b6cfe9bcb05c9ac7512",
+                          "typeString": "literal_string \"COAL INDIA LTD\""
+                        },
+                        "value": "COAL INDIA LTD"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "434f414c494e444941",
+                        "id": 44,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "536:11:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_9eade10186e29e5446e0ebc475c004372e8e7e417e973d1d017f53bbdfc7d0d9",
+                          "typeString": "literal_string \"COALINDIA\""
+                        },
+                        "value": "COALINDIA"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31383030",
+                        "id": 45,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "548:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1800_by_1",
+                          "typeString": "int_const 1800"
+                        },
+                        "value": "1800"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31383035",
+                        "id": 46,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "553:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1805_by_1",
+                          "typeString": "int_const 1805"
+                        },
+                        "value": "1805"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_14652a0dc59d8e4fddda9c9d1733359a7c09deb246234b6cfe9bcb05c9ac7512",
+                          "typeString": "literal_string \"COAL INDIA LTD\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_9eade10186e29e5446e0ebc475c004372e8e7e417e973d1d017f53bbdfc7d0d9",
+                          "typeString": "literal_string \"COALINDIA\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1800_by_1",
+                          "typeString": "int_const 1800"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1805_by_1",
+                          "typeString": "int_const 1805"
+                        }
+                      ],
+                      "id": 42,
+                      "name": "addShares",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 84,
+                      "src": "509:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,string memory,uint256,uint256)"
+                      }
+                    },
+                    "id": 47,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "509:49:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 48,
+                  "nodeType": "ExpressionStatement",
+                  "src": "509:49:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "495443204c5444",
+                        "id": 50,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "573:9:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_3e1b30bdd18608a9fbaac168f5e72d0551e01a4cc1d12e7757b496575f86e426",
+                          "typeString": "literal_string \"ITC LTD\""
+                        },
+                        "value": "ITC LTD"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "495443",
+                        "id": 51,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "583:5:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_2be63ad6c9dc22c3bcb4e494a85ef22c73f0025ba32027cd2769511789afbef1",
+                          "typeString": "literal_string \"ITC\""
+                        },
+                        "value": "ITC"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31343035",
+                        "id": 52,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "589:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1405_by_1",
+                          "typeString": "int_const 1405"
+                        },
+                        "value": "1405"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31343031",
+                        "id": 53,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "594:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1401_by_1",
+                          "typeString": "int_const 1401"
+                        },
+                        "value": "1401"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_3e1b30bdd18608a9fbaac168f5e72d0551e01a4cc1d12e7757b496575f86e426",
+                          "typeString": "literal_string \"ITC LTD\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_2be63ad6c9dc22c3bcb4e494a85ef22c73f0025ba32027cd2769511789afbef1",
+                          "typeString": "literal_string \"ITC\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1405_by_1",
+                          "typeString": "int_const 1405"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1401_by_1",
+                          "typeString": "int_const 1401"
+                        }
+                      ],
+                      "id": 49,
+                      "name": "addShares",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 84,
+                      "src": "563:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,string memory,uint256,uint256)"
+                      }
+                    },
+                    "id": 54,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "563:36:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 55,
+                  "nodeType": "ExpressionStatement",
+                  "src": "563:36:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 57,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "341:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "351:0:0"
+            },
+            "scope": 85,
+            "src": "330:274:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 83,
+              "nodeType": "Block",
+              "src": "685:77:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 69,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "690:8:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 68,
+                      "name": "Count",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 18,
+                      "src": "690:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 70,
+                  "nodeType": "ExpressionStatement",
+                  "src": "690:8:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 81,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 71,
+                        "name": "Share",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 16,
+                        "src": "703:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Shares_$12_storage_$",
+                          "typeString": "mapping(uint256 => struct Shares.Shares storage ref)"
+                        }
+                      },
+                      "id": 73,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 72,
+                        "name": "Count",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18,
+                        "src": "709:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "703:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Shares_$12_storage",
+                        "typeString": "struct Shares.Shares storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 75,
+                          "name": "Count",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 18,
+                          "src": "725:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 76,
+                          "name": "_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 59,
+                          "src": "732:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 77,
+                          "name": "_code",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 61,
+                          "src": "739:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 78,
+                          "name": "_bamt",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 63,
+                          "src": "745:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 79,
+                          "name": "_samt",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 65,
+                          "src": "751:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 74,
+                        "name": "Shares",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12,
+                        "src": "718:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Shares_$12_storage_ptr_$",
+                          "typeString": "type(struct Shares.Shares storage pointer)"
+                        }
+                      },
+                      "id": 80,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "718:39:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Shares_$12_memory",
+                        "typeString": "struct Shares.Shares memory"
+                      }
+                    },
+                    "src": "703:54:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Shares_$12_storage",
+                      "typeString": "struct Shares.Shares storage ref"
+                    }
+                  },
+                  "id": 82,
+                  "nodeType": "ExpressionStatement",
+                  "src": "703:54:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 84,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addShares",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 66,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 59,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 84,
+                  "src": "629:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 58,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "629:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 61,
+                  "name": "_code",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 84,
+                  "src": "642:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 60,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "642:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 63,
+                  "name": "_bamt",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 84,
+                  "src": "655:10:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 62,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "655:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 65,
+                  "name": "_samt",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 84,
+                  "src": "666:10:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 64,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "666:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "628:49:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 67,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "685:0:0"
+            },
+            "scope": 85,
+            "src": "609:153:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "private"
+          }
+        ],
+        "scope": 86,
+        "src": "28:741:0"
+      }
+    ],
+    "src": "0:769:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/PRIYAM SHAH/Blockchain/HashItOut/contracts/Shares.sol",
+    "exportedSymbols": {
+      "Shares": [
+        85
+      ]
+    },
+    "id": 86,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 85,
+        "linearizedBaseContracts": [
+          85
+        ],
+        "name": "Shares",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Shares.Shares",
+            "id": 12,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 12,
+                "src": "83:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "83:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "name": "Share_Name",
+                "nodeType": "VariableDeclaration",
+                "scope": 12,
+                "src": "96:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "96:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7,
+                "name": "Share_Code",
+                "nodeType": "VariableDeclaration",
+                "scope": 12,
+                "src": "119:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 6,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "119:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 9,
+                "name": "Buy_Amt",
+                "nodeType": "VariableDeclaration",
+                "scope": 12,
+                "src": "142:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 8,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "142:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 11,
+                "name": "Sell_Amt",
+                "nodeType": "VariableDeclaration",
+                "scope": 12,
+                "src": "160:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 10,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "160:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Shares",
+            "nodeType": "StructDefinition",
+            "scope": 85,
+            "src": "65:114:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 16,
+            "name": "Share",
+            "nodeType": "VariableDeclaration",
+            "scope": 85,
+            "src": "199:36:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Shares_$12_storage_$",
+              "typeString": "mapping(uint256 => struct Shares.Shares)"
+            },
+            "typeName": {
+              "id": 15,
+              "keyType": {
+                "id": 13,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "207:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "199:23:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Shares_$12_storage_$",
+                "typeString": "mapping(uint256 => struct Shares.Shares)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 14,
+                "name": "Shares",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 12,
+                "src": "215:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Shares_$12_storage_ptr",
+                  "typeString": "struct Shares.Shares"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 18,
+            "name": "Count",
+            "nodeType": "VariableDeclaration",
+            "scope": 85,
+            "src": "239:17:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 17,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "239:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 56,
+              "nodeType": "Block",
+              "src": "351:253:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "414343204c494d49544544",
+                        "id": 22,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "366:13:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_dcc5c06d5065e10afa5dd231491bafcba3ef4fa7ead4b7a622f7e00d8647a896",
+                          "typeString": "literal_string \"ACC LIMITED\""
+                        },
+                        "value": "ACC LIMITED"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "414343",
+                        "id": 23,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "380:5:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_ba820cc3887163b837a8768e6a5b186b16a86bdf66a4448502c551f31328f85f",
+                          "typeString": "literal_string \"ACC\""
+                        },
+                        "value": "ACC"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31303030",
+                        "id": 24,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "386:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1000_by_1",
+                          "typeString": "int_const 1000"
+                        },
+                        "value": "1000"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "393830",
+                        "id": 25,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "391:3:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_980_by_1",
+                          "typeString": "int_const 980"
+                        },
+                        "value": "980"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_dcc5c06d5065e10afa5dd231491bafcba3ef4fa7ead4b7a622f7e00d8647a896",
+                          "typeString": "literal_string \"ACC LIMITED\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_ba820cc3887163b837a8768e6a5b186b16a86bdf66a4448502c551f31328f85f",
+                          "typeString": "literal_string \"ACC\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1000_by_1",
+                          "typeString": "int_const 1000"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_980_by_1",
+                          "typeString": "int_const 980"
+                        }
+                      ],
+                      "id": 21,
+                      "name": "addShares",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 84,
+                      "src": "356:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,string memory,uint256,uint256)"
+                      }
+                    },
+                    "id": 26,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "356:39:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 27,
+                  "nodeType": "ExpressionStatement",
+                  "src": "356:39:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4144414e4920504f574552204c5444",
+                        "id": 29,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "410:17:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_28774b70fefc57f486e2064a52ce3cd77b3efb11a5dcda6f2a5871e399f64940",
+                          "typeString": "literal_string \"ADANI POWER LTD\""
+                        },
+                        "value": "ADANI POWER LTD"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4144414e49504f574552",
+                        "id": 30,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "428:12:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_3c9ef14a6e80abf0cd59095fafd1e2112c1c53f644e92fcf7e2b1df9d9cfc8fb",
+                          "typeString": "literal_string \"ADANIPOWER\""
+                        },
+                        "value": "ADANIPOWER"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31353030",
+                        "id": 31,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "441:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1500_by_1",
+                          "typeString": "int_const 1500"
+                        },
+                        "value": "1500"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31363030",
+                        "id": 32,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "446:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1600_by_1",
+                          "typeString": "int_const 1600"
+                        },
+                        "value": "1600"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_28774b70fefc57f486e2064a52ce3cd77b3efb11a5dcda6f2a5871e399f64940",
+                          "typeString": "literal_string \"ADANI POWER LTD\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_3c9ef14a6e80abf0cd59095fafd1e2112c1c53f644e92fcf7e2b1df9d9cfc8fb",
+                          "typeString": "literal_string \"ADANIPOWER\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1500_by_1",
+                          "typeString": "int_const 1500"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1600_by_1",
+                          "typeString": "int_const 1600"
+                        }
+                      ],
+                      "id": 28,
+                      "name": "addShares",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 84,
+                      "src": "400:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,string memory,uint256,uint256)"
+                      }
+                    },
+                    "id": 33,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "400:51:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 34,
+                  "nodeType": "ExpressionStatement",
+                  "src": "400:51:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "42414e4b204f4620494e444941",
+                        "id": 36,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "466:15:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_9bef75b92408ffecc14f44f18b99f1314c950ba8c9b385d31f92d340dc934b92",
+                          "typeString": "literal_string \"BANK OF INDIA\""
+                        },
+                        "value": "BANK OF INDIA"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "42414e4b494e444941",
+                        "id": 37,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "482:11:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cd5205421bcc15a5019d2d332594ed6e43e0fba9bcac47505edba4c6081baff1",
+                          "typeString": "literal_string \"BANKINDIA\""
+                        },
+                        "value": "BANKINDIA"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "32303030",
+                        "id": 38,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "494:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2000_by_1",
+                          "typeString": "int_const 2000"
+                        },
+                        "value": "2000"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31393830",
+                        "id": 39,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "499:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1980_by_1",
+                          "typeString": "int_const 1980"
+                        },
+                        "value": "1980"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_9bef75b92408ffecc14f44f18b99f1314c950ba8c9b385d31f92d340dc934b92",
+                          "typeString": "literal_string \"BANK OF INDIA\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_cd5205421bcc15a5019d2d332594ed6e43e0fba9bcac47505edba4c6081baff1",
+                          "typeString": "literal_string \"BANKINDIA\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_2000_by_1",
+                          "typeString": "int_const 2000"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1980_by_1",
+                          "typeString": "int_const 1980"
+                        }
+                      ],
+                      "id": 35,
+                      "name": "addShares",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 84,
+                      "src": "456:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,string memory,uint256,uint256)"
+                      }
+                    },
+                    "id": 40,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "456:48:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 41,
+                  "nodeType": "ExpressionStatement",
+                  "src": "456:48:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "434f414c20494e444941204c5444",
+                        "id": 43,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "519:16:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_14652a0dc59d8e4fddda9c9d1733359a7c09deb246234b6cfe9bcb05c9ac7512",
+                          "typeString": "literal_string \"COAL INDIA LTD\""
+                        },
+                        "value": "COAL INDIA LTD"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "434f414c494e444941",
+                        "id": 44,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "536:11:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_9eade10186e29e5446e0ebc475c004372e8e7e417e973d1d017f53bbdfc7d0d9",
+                          "typeString": "literal_string \"COALINDIA\""
+                        },
+                        "value": "COALINDIA"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31383030",
+                        "id": 45,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "548:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1800_by_1",
+                          "typeString": "int_const 1800"
+                        },
+                        "value": "1800"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31383035",
+                        "id": 46,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "553:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1805_by_1",
+                          "typeString": "int_const 1805"
+                        },
+                        "value": "1805"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_14652a0dc59d8e4fddda9c9d1733359a7c09deb246234b6cfe9bcb05c9ac7512",
+                          "typeString": "literal_string \"COAL INDIA LTD\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_9eade10186e29e5446e0ebc475c004372e8e7e417e973d1d017f53bbdfc7d0d9",
+                          "typeString": "literal_string \"COALINDIA\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1800_by_1",
+                          "typeString": "int_const 1800"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1805_by_1",
+                          "typeString": "int_const 1805"
+                        }
+                      ],
+                      "id": 42,
+                      "name": "addShares",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 84,
+                      "src": "509:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,string memory,uint256,uint256)"
+                      }
+                    },
+                    "id": 47,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "509:49:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 48,
+                  "nodeType": "ExpressionStatement",
+                  "src": "509:49:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "495443204c5444",
+                        "id": 50,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "573:9:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_3e1b30bdd18608a9fbaac168f5e72d0551e01a4cc1d12e7757b496575f86e426",
+                          "typeString": "literal_string \"ITC LTD\""
+                        },
+                        "value": "ITC LTD"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "495443",
+                        "id": 51,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "583:5:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_2be63ad6c9dc22c3bcb4e494a85ef22c73f0025ba32027cd2769511789afbef1",
+                          "typeString": "literal_string \"ITC\""
+                        },
+                        "value": "ITC"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31343035",
+                        "id": 52,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "589:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1405_by_1",
+                          "typeString": "int_const 1405"
+                        },
+                        "value": "1405"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31343031",
+                        "id": 53,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "594:4:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1401_by_1",
+                          "typeString": "int_const 1401"
+                        },
+                        "value": "1401"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_3e1b30bdd18608a9fbaac168f5e72d0551e01a4cc1d12e7757b496575f86e426",
+                          "typeString": "literal_string \"ITC LTD\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_2be63ad6c9dc22c3bcb4e494a85ef22c73f0025ba32027cd2769511789afbef1",
+                          "typeString": "literal_string \"ITC\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1405_by_1",
+                          "typeString": "int_const 1405"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1401_by_1",
+                          "typeString": "int_const 1401"
+                        }
+                      ],
+                      "id": 49,
+                      "name": "addShares",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 84,
+                      "src": "563:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,string memory,uint256,uint256)"
+                      }
+                    },
+                    "id": 54,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "563:36:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 55,
+                  "nodeType": "ExpressionStatement",
+                  "src": "563:36:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 57,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "341:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "351:0:0"
+            },
+            "scope": 85,
+            "src": "330:274:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 83,
+              "nodeType": "Block",
+              "src": "685:77:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 69,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "690:8:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 68,
+                      "name": "Count",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 18,
+                      "src": "690:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 70,
+                  "nodeType": "ExpressionStatement",
+                  "src": "690:8:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 81,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 71,
+                        "name": "Share",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 16,
+                        "src": "703:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Shares_$12_storage_$",
+                          "typeString": "mapping(uint256 => struct Shares.Shares storage ref)"
+                        }
+                      },
+                      "id": 73,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 72,
+                        "name": "Count",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18,
+                        "src": "709:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "703:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Shares_$12_storage",
+                        "typeString": "struct Shares.Shares storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 75,
+                          "name": "Count",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 18,
+                          "src": "725:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 76,
+                          "name": "_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 59,
+                          "src": "732:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 77,
+                          "name": "_code",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 61,
+                          "src": "739:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 78,
+                          "name": "_bamt",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 63,
+                          "src": "745:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 79,
+                          "name": "_samt",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 65,
+                          "src": "751:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 74,
+                        "name": "Shares",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12,
+                        "src": "718:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Shares_$12_storage_ptr_$",
+                          "typeString": "type(struct Shares.Shares storage pointer)"
+                        }
+                      },
+                      "id": 80,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "718:39:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Shares_$12_memory",
+                        "typeString": "struct Shares.Shares memory"
+                      }
+                    },
+                    "src": "703:54:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Shares_$12_storage",
+                      "typeString": "struct Shares.Shares storage ref"
+                    }
+                  },
+                  "id": 82,
+                  "nodeType": "ExpressionStatement",
+                  "src": "703:54:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 84,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addShares",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 66,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 59,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 84,
+                  "src": "629:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 58,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "629:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 61,
+                  "name": "_code",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 84,
+                  "src": "642:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 60,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "642:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 63,
+                  "name": "_bamt",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 84,
+                  "src": "655:10:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 62,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "655:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 65,
+                  "name": "_samt",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 84,
+                  "src": "666:10:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 64,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "666:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "628:49:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 67,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "685:0:0"
+            },
+            "scope": 85,
+            "src": "609:153:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "private"
+          }
+        ],
+        "scope": 86,
+        "src": "28:741:0"
+      }
+    ],
+    "src": "0:769:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xf0cca5be8ed9d27eba1d7c900d748de027402649",
+      "transactionHash": "0x7a9c4390c7b5238ab2e717e03bf92de13ab5c4c800d1c5e23d979d2304e863d0"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-09-08T12:02:48.479Z"
+}

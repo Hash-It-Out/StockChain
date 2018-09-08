@@ -4,3 +4,5 @@ npm install -g truffle
 ganache
 npm install -g solidity
 metamask(chrome extension)
+mocha
+chai
