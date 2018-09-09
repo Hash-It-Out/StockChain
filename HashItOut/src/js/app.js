@@ -2,8 +2,6 @@ App = {
   web3Provider: null,
   contracts: {},
   account: '0x0',
- // hasVoted: false,
-
   init: function() {
     return App.initWeb3();
   },
@@ -66,6 +64,12 @@ App = {
         App.account = account;
         $("#accountAddress").html("Your Account: " + account);
       }
+      web3.eth.getBalance(account, function(err, balance) {
+      if (err === null) {
+        var bal = web3.fromWei(balance, "ether");
+        $("#accountbalance").html(web3.fromWei(balance, "ether") + " ETH");
+      }
+    });
     });
 
     // Load contract data
@@ -79,30 +83,146 @@ App = {
       // var candidatesSelect = $('#candidatesSelect');
       // candidatesSelect.empty();
 
-      for (var i = 1; i <= Count; i++) {
-        shareInstance.Share(i).then(function(sh) {
+      // for (var i = 1; i <= Count; i++) {
+      //   shareInstance.Share(i).then(function(sh) {
+      //     var id = sh[0];
+      //     var Share_Name = sh[1];
+      //     var Share_Code = sh[2];
+      //     var Buy_Amt = sh[3];
+      //     var Sell_Amt = sh[4];
+      //     // console.log(id+" "+Share_Name);
+      //     // Render candidate Result
+      //     var shareTemplate = "<tr><th>" + id + "</th><td>" + Share_Name + "</td><td>" + Share_Code + "</td><td>" + Buy_Amt +`<a onclick="document.getElementById('id02').style.display='block'" class="glyphicon glyphicon-minus">`+ "</td><td>" + Sell_Amt +`<a onclick="document.getElementById('id01').style.display='block'" class="glyphicon glyphicon-plus">`+ "</td></tr>"
+      //     shareResults.append(shareTemplate);
+
+      //     // // Render candidate ballot option
+      //     // var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
+      //     // candidatesSelect.append(candidateOption);
+      //   });
+      // }
+               shareInstance.Share(1).then(function(sh) {
+          var id = sh[0];
+          var Share_Name = sh[1];
+          var Share_Code = sh[2];
+          var Buy_Amt = sh[3];
+          var Sell_Amt = sh[4]; 
+          console.log(id+" "+Share_Name);
+          // var idname=document.getElementById('id0'+id);
+          // console.log(idname);
+          // Render candidate Result1
+          var shareTemplate = "<tr><th>" + id + "</th><td>" + Share_Name + "</td><td>" + Share_Code + "</td><td><span class='value01b'>" + Buy_Amt +`</span><a onclick="document.getElementById('id01').style.display='block'" class="glyphicon glyphicon-minus">`+ "</td><td class='value01s'>" + Sell_Amt +`<a onclick="document.getElementById('id01').style.display='block'" class="glyphicon glyphicon-plus">`+ "</td></tr>"
+          
+          shareResults.append(shareTemplate);
+
+
+          // // Render candidate ballot option
+          // var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
+          // candidatesSelect.append(candidateOption);
+        });
+          shareInstance.Share(2).then(function(sh) {
           var id = sh[0];
           var Share_Name = sh[1];
           var Share_Code = sh[2];
           var Buy_Amt = sh[3];
           var Sell_Amt = sh[4];
           console.log(id+" "+Share_Name);
-          // Render candidate Result
-          var shareTemplate = "<tr><th>" + id + "</th><td>" + Share_Name + "</td><td>" + Share_Code + "</td><td>" + Buy_Amt +`<a onclick="document.getElementById('id02').style.display='block'" class="glyphicon glyphicon-minus">`+ "</td><td>" + Sell_Amt +`<a onclick="document.getElementById('id01').style.display='block'" class="glyphicon glyphicon-plus">`+ "</td></tr>"
+          // var idname=document.getElementById('id0'+id);
+          // console.log(idname);
+          // Render candidate Result1
+          var shareTemplate = "<tr><th>" + id + "</th><td>" + Share_Name + "</td><td>" + Share_Code + "</td><td><span class='value02b'>" + Buy_Amt +`</span><a onclick="document.getElementById('id02').style.display='block'" class="glyphicon glyphicon-minus">`+ "</td><td><span class='value02s'>" + Sell_Amt +`</span><a onclick="document.getElementById('id02').style.display='block'" class="glyphicon glyphicon-plus">`+ "</td></tr>"
+          
           shareResults.append(shareTemplate);
+
 
           // // Render candidate ballot option
           // var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
           // candidatesSelect.append(candidateOption);
         });
-      }
+          shareInstance.Share(3).then(function(sh) {
+          var id = sh[0];
+          var Share_Name = sh[1];
+          var Share_Code = sh[2];
+          var Buy_Amt = sh[3];
+          var Sell_Amt = sh[4]; 
+          console.log(id+" "+Share_Name);
+          // var idname=document.getElementById('id0'+id);
+          // console.log(idname);
+          // Render candidate Result1
+          var shareTemplate = "<tr><th>" + id + "</th><td>" + Share_Name + "</td><td>" + Share_Code + "</td><td><span class='value03b'>" + Buy_Amt +`</span><a onclick="document.getElementById('id03').style.display='block'" class="glyphicon glyphicon-minus">`+ "</td><td class='value03s'>" + Sell_Amt +`<a onclick="document.getElementById('id03').style.display='block'" class="glyphicon glyphicon-plus">`+ "</td></tr>"
+          
+          shareResults.append(shareTemplate);
+
+
+          // // Render candidate ballot option
+          // var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
+          // candidatesSelect.append(candidateOption);
+        });
+          shareInstance.Share(4).then(function(sh) {
+          var id = sh[0];
+          var Share_Name = sh[1];
+          var Share_Code = sh[2];
+          var Buy_Amt = sh[3];
+          var Sell_Amt = sh[4]; 
+          console.log(id+" "+Share_Name);
+          // var idname=document.getElementById('id0'+id);
+          // console.log(idname);
+          // Render candidate Result1
+          var shareTemplate = "<tr><th>" + id + "</th><td>" + Share_Name + "</td><td>" + Share_Code + "</td><td><span class='value04b'>" + Buy_Amt +`</span><a onclick="document.getElementById('id04').style.display='block'" class="glyphicon glyphicon-minus">`+ "</td><td class='value04s'>" + Sell_Amt +`<a onclick="document.getElementById('id04').style.display='block'" class="glyphicon glyphicon-plus">`+ "</td></tr>"
+          
+          shareResults.append(shareTemplate);
+
+
+          // // Render candidate ballot option
+          // var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
+          // candidatesSelect.append(candidateOption);
+        });
+          shareInstance.Share(5).then(function(sh) {
+          var id = sh[0];
+          var Share_Name = sh[1];
+          var Share_Code = sh[2];
+          var Buy_Amt = sh[3];
+          var Sell_Amt = sh[4]; 
+          console.log(id+" "+Share_Name);
+          // var idname=document.getElementById('id0'+id);
+          // console.log(idname);
+          // Render candidate Result1
+          var shareTemplate = "<tr><th>" + id + "</th><td>" + Share_Name + "</td><td>" + Share_Code + "</td><td><span class='value05b'>" + Buy_Amt +`</span><a onclick="document.getElementById('id05').style.display='block'" class="glyphicon glyphicon-minus>`+ "</td><td class='value05s'>" + Sell_Amt +`<a onclick="document.getElementById('id05').style.display='block'" class="glyphicon glyphicon-plus">`+ "</td></tr>"
+          
+          shareResults.append(shareTemplate);
+
+
+          // // Render candidate ballot option
+          // var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
+          // candidatesSelect.append(candidateOption);
+        });
+
       loader.hide();
       content.show();
     }).catch(function(error) {
       console.warn(error);
     });
+  },
+  buyshare: function() {
+    var user_id = 1;
+    App.contracts.Shares.deployed().then(function(instance) {
+      web3.eth.getBalance(App.account, function(err, balance) {
+      if (err === null) {
+        var bal = web3.fromWei(balance, "ether");
+        print(bal);
+       }
+    });
+
+      return instance.buy(user_id, { from: App.account });
+    }).then(function(result) {
+      // Wait for balance to update
+      $("#content").hide();
+      $("#loader").show();
+    }).catch(function(err) {
+      console.error(err);
+    });
   }
 };
+
 
 $(function() {
   $(window).load(function() {

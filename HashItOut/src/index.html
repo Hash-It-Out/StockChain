@@ -104,18 +104,66 @@ $(window).on("load resize ", function() {
 
 $(document).ready(function(){
 
-$('.quantity').on('blur',function(){
-  var quantity=$('.quantity').val();
-  var value=$(".value .value1").html();
+$('#id01 .quantity').on('blur',function(){
+  var quantity=$(this).val();
+  var value=$(".value01b").html();
   var amount=quantity*value;
-  console.log(quantity);
-  console.log(value);
+  
+  
 
   $('.amount').val(amount);
   
 
 });
 
+
+$('#id02 .quantity').on('blur',function(){
+  var quantity=$(this).val();
+  var value=$(".value02b").html();
+  var amount=quantity*value;
+  
+  
+
+  $('.amount').val(amount);
+  
+
+});
+
+$('#id03 .quantity').on('blur',function(){
+  var quantity=$(this).val();
+  var value=$(".value03b").html();
+  var amount=quantity*value;
+  
+  
+
+  $('.amount').val(amount);
+  
+
+});
+
+$('#id04 .quantity').on('blur',function(){
+  var quantity=$(this).val();
+  var value=$(".value04b").html();
+  var amount=quantity*value;
+  
+  
+
+  $('.amount').val(amount);
+  
+
+});
+
+$('#id05 .quantity').on('blur',function(){
+  var quantity=$(this).val();
+  var value=$(".value05b").html();
+  var amount=quantity*value;
+  
+  
+
+  $('.amount').val(amount);
+  
+
+});
 
 });
 </script>
@@ -154,7 +202,113 @@ $('.quantity').on('blur',function(){
               <hr />
             </form>
  -->            <p id="accountAddress" class="text-center"></p>
+                <p id="accountbalance" class="text-center"></p>
           </div>
+
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <p>1</p>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <form onSubmit="App.buyshare();">
+        <div class="form-group" id="1">
+          <label>Quantity</label>
+          <input type="number" class="form-control quantity" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label>Amount</label>
+          <input type="number" class="form-control amount" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Buy</button>
+      </form>
+      </div>
+    </div>
+</div>
+
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <p>2</p>
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <form>
+        <div class="form-group">
+          <label>Quantity</label>
+          <input type="number" class="form-control quantity" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label>Amount</label>
+          <input type="number" class="form-control amount" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Buy</button>
+      </form>
+      </div>
+    </div>
+</div>
+
+<div id="id03" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <p>3</p>
+        <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <form>
+        <div class="form-group">
+          <label>Quantity</label>
+          <input type="number" class="form-control quantity" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label>Amount</label>
+          <input type="number" class="form-control amount" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Buy</button>
+      </form>
+      </div>
+    </div>
+</div>
+
+<div id="id04" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <form>
+        <div class="form-group">
+          <label>Quantity</label>
+          <input type="number" class="form-control quantity" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label>Amount</label>
+          <input type="number" class="form-control amount" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Buy</button>
+      </form>
+      </div>
+    </div>
+</div>
+
+<div id="id05" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <form>
+        <div class="form-group">
+          <label>Quantity</label>
+          <input type="number" class="form-control quantity" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label>Amount</label>
+          <input type="number" class="form-control amount" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Buy</button>
+      </form>
+      </div>
+    </div>
+</div>
+
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
